@@ -1,0 +1,21 @@
+Github basics
+
+
+To setup remote github repo
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git remote add origin https://github.com/ksuzy31/Stuff.git
+
+
+To push things
+
+git init #initialize current directory
+git add <add files>
+git commit -m "<Insert message to help>"
+git push -u origin master #This actually pushes shit 
+
+
+To pull things
+
+git remote add origin "<URL of github repo> 
+git pull "<URL of github repo>"
