@@ -19,3 +19,7 @@ To pull things
 
 git remote add origin "<URL of github repo> 
 git pull "<URL of github repo>"
+
+or
+
+git pull https://github.com/ksuzy31/Stuff --allow-unrelated-histories
