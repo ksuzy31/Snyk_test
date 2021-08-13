@@ -1,0 +1,52 @@
+SNYK GIT INTEGRATION
+
+Useful github links 
+https://www.datacamp.com/community/tutorials/git-push-pull
+https://github.com/git-guides/git-push
+
+1. create git repo on git hub
+https://github.com/ksuzy31/Snyk_test.git
+
+2. change the remote repo that you want to point to on your machine
+ git remote set-url origin https://github.com/ksuzy31/Snyk_test.git
+ 
+ 3. validate it is correct
+ git remote -v
+
+4.  clone the free github repo from snyk
+git clone https://github.com/snyk/goof.git
+
+5. reset the remote repo
+ git remote set-url origin https://github.com/ksuzy31/Snyk_test.git
+
+ 
+ 6. upload the cloned git project onto your github
+ git init
+ git add *
+ git push --set-upstream origin
+ 
+ 7. Create a git branch of this locally (called add_vulns) (NOTE: you can check your git branches with git branch)
+ git branch add_vulns
+ 
+ 8. Switch branches to the add_vulns using the git checkout command
+ git checkout add_vulns
+ 
+ 9. Validate with git branch that you are on add_vulns
+ git branch
+ 
+ 10. rm the package-lock.json
+ rm package-lock.json
+ 
+ 11. add the new dependency in the package.json
+ vi package..json
+ 
+ 12. sudo npm install --package-lock
+ (a lock file == It stores an exact, versioned dependency tree rather than using starred versioning like package.json itself (e.g. 1.0.*))
+ 
+ 13. Commit changes locally
+ git status 
+ git add package*
+ git commit -m "addint tinymce v4.1.0"
+ 
+ 14. Push the changes from the add_vulns branch
+ git push --set-upstream origin add_vulns
